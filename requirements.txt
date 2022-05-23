@@ -2,7 +2,7 @@ alphabet-detector==0.0.7
 bleach==5.0.0
 cachetools==5.1.0
 CurrencyConverter
-emoji==1.6.1
+emoji==1.7.0
 feedparser==6.0.10
 pyrate-limiter==2.8.1
 lxml==4.8.0
