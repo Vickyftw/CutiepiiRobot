@@ -109,17 +109,14 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+START_MSG = "I'm Alive babe!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/85581d42f2b95ff65fc06.jpg) 」────
+────「 [{}](https://telegra.ph/file/0270aa22d8c6ce8ad491e.jpg) 」────
 
 *Hola! {},*
 *I am an Anime themed advance group management bot with a lot of Cool Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+
 ➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
@@ -131,7 +128,7 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://telegram.dog/GIrlsBoysXD"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://telegram.dog/TamilChatszz"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
@@ -140,7 +137,7 @@ buttons = [
                              url=f"https://telegram.dog/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://telegram.dog/Black_Knights_Union")
+                             url="https://telegram.dog/angelxupdates")
                      ], 
     ]
 
@@ -289,7 +286,7 @@ async def start(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
+                            url="https://telegram.dog/angelxupdates",
                         ),
                     ]
                 ]
@@ -357,7 +354,7 @@ async def help_button(update: Update, context: CallbackContext):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╔═━「 *{}* module: 」\n".format(
+                "╔═━「 *{}* Angel Module: 」\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -368,7 +365,7 @@ async def help_button(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back"),
-                    InlineKeyboardButton(text="[► Support ◄]", url="https://t.me/Black_Knights_Union_Support")]]
+                    InlineKeyboardButton(text="[► Support ◄]", url="https://t.me/angelsupports")]]
                 ),
             )
 
@@ -660,8 +657,8 @@ async def donate(update: Update, context: CallbackContext):
             await update.effective_message.reply_text(
                 text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the support group.",
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="📢 Updates", url="https://telegram.dog/Black_Knights_Union"),
-                      InlineKeyboardButton(text="🚑 Support", url="https://telegram.dog/Black_Knights_Union_Support")]]
+                    [[InlineKeyboardButton(text="📢 Updates", url="https://angelxupdates"),
+                      InlineKeyboardButton(text="🚑 Support", url="https://telegram.dog/angelsupports")]]
                 ),
             )       
         except Forbidden:
